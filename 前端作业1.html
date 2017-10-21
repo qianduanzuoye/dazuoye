@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>前端作业1</title>
+</head>
+<style>
+  #header{
+  	height: 40px;
+  	background-color: rgb(33,137,191);
+    background-image: url(./images/login.png);
+    background-repeat: no-repeat;
+    position: 600px 10px;
+    background-position: 1350px 10px;
+  }
+  .header-img1{
+   position: absolute 1200px 30px;
+   margin-left:50px;
+  }
+  .header-frist-img2{
+    margin-left:10px;
+    margin-top:5px;
+  }
+  .header-frist-img3 {
+    margin-top:8px;
+  }
+    #header-frist{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background: white;
+    position: absolute ;
+    left:1050px;
+    top:10px;
+   
+  }
+    #img-one{
+  	padding-top: 10px;
+  	padding-left: 50px;
+  }
+  #mainer{
+  	width: 400px;
+    height:1200px;
+    background-color: rgb(42,46,61);
+    float:left;
+    color: grey;
+  }
+  #mainer-frist{
+    height: 100px;
+    line-height: 20px;
+    margin-left:20px;
+    background-image: url(./images/circle.png);
+    padding-left:60px;
+    background-repeat: no-repeat;
+    background-position: 65px 5px;
+  }
+
+  #mainer-frist span{
+    color: white;
+  }
+  #mainer-scond{
+    height: 100px;
+    
+    margin-left:100px;
+    line-height: 40px;
+  }
+  #mainer-scond span{
+    margin-left: 70px;
+  }
+  #mainer-third{
+     background-color: rgb(56,61,78);
+     width: 400px;
+     height: 350px;
+  }
+  #mainer-third-A{
+    height: 30px;
+    background-color: rgb(56,61,78);
+    background-image: url(./images/bg.png);
+    background-size:30px;
+    background-repeat: no-repeat;
+     padding-left: 120px;
+     background-position: 85px 0px;
+     margin-bottom:30px;
+  }
+ #mainer-third-B{
+    height: 30px;
+    background-color: rgb(56,61,78);
+    background-image: url(./images/bg.png);
+    background-image-size:50px 30px;
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    background-size:30px;
+    background-position: 105px -33px;
+    margin-bottom:30px;
+  }
+   #mainer-third-C{
+    height: 30px;
+    background-color: rgb(56,61,78);
+    background-image: url(./images/bg.png);
+    background-image-size:50px 30px;
+    background-repeat: no-repeat;
+     padding-left: 150px;
+     background-size:30px;
+     margin-bottom:30px;
+     background-position: 120px -60px;
+  }
+   #mainer-third-D{
+    height: 30px;
+    background-color: rgb(56,61,78);
+    background-image: url(./images/bg.png);
+    background-image-size:50px 30px;
+    background-repeat: no-repeat;
+     padding-left: 170px;
+     background-size:30px;
+     margin-bottom:30px;
+    background-position: 137px -90px;
+}
+   #mainer-third-E{
+    height: 30px;
+    background-color: rgb(56,61,78);
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+     padding-left: 170px;
+     background-size:30px;
+     margin-bottom:30px;
+     background-position: 135px -95px;
+  }
+   #mainer-third-F{
+    height: 30px;
+    background-color: rgb(56,61,78);
+    background-image: url(./images/bg.png);
+    background-image-size:50px 30px;
+    background-repeat: no-repeat;
+     padding-left: 150px;
+     background-size:30px;
+     margin-bottom:30px;
+     background-position: 120px -60px;
+  }
+  #mainer-third span{
+    color: white;
+  }
+  #mainer-forth-A{
+   height: 30px;
+   background-image: url(./images/bg.png);
+   background-repeat: no-repeat;
+   padding-left: 130px;
+   background-size: 30px;
+   margin-bottom: 50px;
+   background-position: 100px -122px;
+}
+  #mainer-forth-B{
+    height: 30px;
+   background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+     padding-left: 130px;
+     background-size:30px;
+     margin-bottom:50px;
+     background-position: 95px -155px;
+  }
+  #mainer-forth-C{
+    height: 30px;
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+     padding-left: 130px;
+     background-size:30px;
+     margin-bottom:50px;
+    background-position: 95px -122px;
+  }
+  #mainer-forth-E{
+    height: 30px;
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+     padding-left: 130px;
+     background-size:30px;
+     margin-bottom:50px;
+    background-position: 95px -122px;
+  }
+  #mainer-forth-D{
+    height: 30px;
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+     padding-left: 130px;
+     background-size:30px;
+     margin-bottom:30px;
+     background-position: 95px -185px;
+  }
+
+  #footer{
+  	width: 1050px;
+  	height:800px;
+  	float:left;
+  	padding-left: 15px;
+  	padding-top: 5px;
+  	background-color: rgb(238,238,237);
+  }
+  #footer-frist{
+  	width: 1050px;
+  	height:25px;
+  	background:white;
+  	float:left;
+  	margin-top:5px;
+    margin-left:10px;
+    font-size: 15px;
+  }
+  #footer-frist span{
+    color: grey;
+  }
+  #footer-second{
+  	width:1050px;
+  	height:60px;
+  	float:left;
+  	margin-top:5px;
+  }
+  .footer-second-A{
+    width: 130px;
+    height: 50px;
+    background-color: rgb(255,255,255);
+    float:left;
+    border: 4px solid rgb(238,238,237);
+    text-align: center;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 10px;
+      
+  }
+  .foooter-second-A a:hover{
+    border:10px solid rgb(240,238,239)
+  }
+  .footer-second-A span{
+    font-size: 20px;
+    color: red;
+  }
+  .footer-second-B{
+    width: 30px;
+    height: 50px;
+    float:left;
+    margin-left:5px;
+    margin-top:5px;
+    background: white;
+    line-height: 50px;
+  }
+   #footer-second-B-img1{
+    margin-left:20px;
+    margin-top:14px;
+  }
+  #footer-second-B-img2{
+    padding-top: 14px;
+  }
+  .footer-second-C{
+    width: 120px;
+    height: 50px;
+    float:left;
+    background: white;
+    margin-left:4px;
+    margin-top:5px;
+    text-align: center;
+    line-height: 50px;
+  }
+   #footer-second-C-img3{
+   margin-top:10px;
+ }
+  #footer-third{
+  	width: 1050px;
+  	height: 50px;
+  	float:left;
+    font-size: 15px;
+  }
+  #F{
+    height: 40PX;
+    text-align: 15px;
+    line-height: 40px;
+  }
+  #B{
+    width: 220px;
+    height: 60px;
+     border-left: 4PX solid rgb(67,178,157);
+     float:left;
+     background-color: white;
+     margin-left: 10px;
+    line-height: 20px ;
+  }
+  #B-1{
+    width: 50px;
+    height: 40px;
+    background-color: rgb(67,178,157);
+    margin-left: 150px;
+    margin-top:-30px;
+  }
+   #C{
+    width: 220px;
+    height: 60px;
+     border-left: 4PX solid rgb(56,138,193);
+     float:left;
+     background: white;
+     margin-left: 10px;
+     line-height: 20px ;
+  }
+  #C-1{
+    width: 50px;
+    height: 40px;
+    background-color: rgb(56,138,193);
+    margin-left: 150px;
+    margin-top:-30px;
+  }
+   #D{
+    width: 220px;
+    height: 60px;
+     border-left: 4PX solid rgb(208,75,54);
+     float:left;
+     background: white;
+     margin-left: 10px;
+      line-height: 20px ;
+  }
+  #D-1{
+    width: 50px;
+    height: 40px;
+    background-color: rgb(208,75,54);
+    margin-left: 150px;
+    margin-top:-30px;
+  }
+   #E{
+    width: 220px;
+    height: 60px;
+     border-left: 4PX solid  rgb(226,205,70);
+     float:left;
+     background: white;
+     margin-left: 10px;
+     line-height: 20px ;
+    }
+    #E-1{
+    width: 50px;
+    height: 40px;
+    background-color: rgb(226,205,70);
+    margin-left: 150px;
+    margin-top:-30px;
+  }
+  #footer-forth{
+  	width:600px;
+  	height:500px;
+  	float:right;
+  	margin-top:50px;
+  }
+  #footer-forth-first{
+    width: 400px;
+    height: 300px;
+    margin: 30px 40px;
+     border-collapse: collapse;
+     text-align: center;
+  }
+  td{
+    width: 50px;
+     border: 1px solid black;
+  }
+  #td-1{
+    width: 300px;
+
+    }
+  #td-1 span{
+    margin-left:20px;
+    display: block;
+    width: 100px;
+  }
+
+  #footer-forth td-1-1{
+    width: 10px;
+    height:10px;
+    background:red;
+    width: 150px;
+    height: 3px;
+    float: right;
+  }
+  #footer-forth-scond{
+    height: 20px;
+    margin-left:20px;
+    margin-top: 10px;
+    background-color: rgb(244,245,246);
+  }
+
+</style>
+<body>
+    <div id=header><img class=header-img1 src="./images/logo.png" alt="">
+        <div id=header-frist>
+        <img class=header-frist-img2 src="./images/login.png"/> <img class=header-frist-img3 src="./images/hd-search-ico.png"></div>
+    </div>
+    <div id=mainer>
+       <div id="mainer-frist"><img id=mainer-frist-img1 src="./images/circle_side.png"> <span>ABC123</span></div>
+       <div id="mainer-scond">110 <span>313</span></br>收藏 <span>粉丝</span></div>
+       <div id="mainer-third">
+       <div id="mainer-third-A"><span>个人报表</span></div>
+       <div id="mainer-third-B"><文件一</div>
+       <div id="mainer-third-C"><span>文件二</span></div>
+       <div id="mainer-third-D"><span>文档1</span></div>
+       <div id="mainer-third-E"><span>文档2</span></div>
+       <div id="mainer-third-F"><span>文件三</span></div></div>
+       <div id="mainer-forth-A">个人收藏</div>
+       <div id="mainer-forth-B">我的分享</div>
+        <div id="mainer-forth-E">图库</div>
+       <div id="mainer-forth-C">成长记录</div> 
+       <div id="mainer-forth-D">账户信息</div>
+    </div>
+    <div id=footer>
+         <div id=footer-frist>C站 / 个人报表 / 文件一 / <span>文档一</span> </div>
+         <div id=footer-second>
+             <div class=footer-second-B><img id="footer-second-B-img1" src="./images/con-leftarrow.png"/></div>
+             <li class="footer-second-A">10:00  am</br>￥<span>1200</span></li>
+             <li class="footer-second-A">11:00 am</br>￥<span>1300</span></li>
+             <li class="footer-second-A">12:00 am</br>￥<span>1200</span></li>
+             <li class="footer-second-A">01:00 pm</br>￥<span>1400</span></li>
+             <li class="footer-second-A">02:00 pm</br>￥<span>1500</span></li>
+             <li class="footer-second-A">03:00 pm</br>￥<span>1800</span></li>
+             <div class=footer-second-B><img id="footer-second-B-img2" src="./images/con-rightarrow.png"/></div>
+             <div class=footer-second-C><img id="footer-second-C-img3" src="./images/con-his.png"/>历史查询</div>
+         </div>
+         <div id=footer-third>
+                   <div id="F">2016年4月份统计</div>
+                   <div id=B>133311</br>成交量<div id=B-1></div></div>
+                   <div id=C>133311</br>成交量<div id=C-1></div></div>
+                   <div id=D>133311</br>成交量<div id=D-1></div></div>
+                   <div id=E>133311</br>成交量<div id=E-1></div></div>
+         </div>
+         <div id=footer-forth>
+             <div id="footer-forth-scond">汽车行业品牌排行榜</div>
+             <table id=footer-forth-first>
+               <tr>
+                  <td>排名</td>
+                  <td>品牌</td>
+                 
+                  <td id="td-1"><span>搜索指数</span></td>
+                
+               </tr>
+               <tr>
+                  <td>1</td>
+                  <td>大众</td>
+                  <td id="td-1"><span>48912001</span><div id="td-1-1"></div></td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td>丰田</td>
+                  <td id="td-1"><span>29307333</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>奥迪</td>
+                  <td id="td-1"><span>2313070</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>本田</td>
+                  <td id="td-1"><span>22885564</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>福特</td>
+                  <td id="td-1"><span>22324792</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>宝马</td>
+                  <td id="td-1"><span>21444077</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>现代</td>
+                  <td id="td-1"><span>201144969</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>8</td>
+                  <td>起亚</td>
+                  <td id="td-1"><span>19251680</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>9</td>
+                  <td>奔驰</td>
+                  <td id="td-1"><span>19172837</span><div id="td-1-1"></div></td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>别克</td>
+                  <td id="td-1"><span>18544027</span><div id="td-1-1"></div></td>
+              </tr>
+             </table>
+         </div>
+    </div>
+	
+</body>
+</html>
