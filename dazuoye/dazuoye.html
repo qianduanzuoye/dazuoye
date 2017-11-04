@@ -6,11 +6,11 @@
 	<style type="text/css">
        .header{
         width: 100%;
-       	height: 700px;
+       	height: 550px;
        	background-image: url(./images/homepage-hero.image.large_2x.jpg);
-        background-size: 120%;
-       	background-repeat: no-repeat;
-       	background-position: -200px 0px;
+        background-size:120%;
+       	background-repeat:repeat-x;
+       	background-position: center 30%;
         margin-bottom:50px;
        }
        .header-frist-1{
@@ -39,7 +39,7 @@
        	font-size:25px;
        }
        .header-frist-3{
-       	width: 40%;
+       	width: 60%;
        	height: 120px;
        	margin: 0px auto;
        	color: white;
@@ -59,13 +59,18 @@
        	background: white;
        	margin: 0px auto;
         font-size:28px;
+        border-bottom:2px solid grey;
+        border-radius: 10px;
        }
        .header-frist-4 input{
         width:500px;
-        height: 30px;
+        height: 40px;
         font-size:15px;
         padding-top:5px;
         padding-left:5px;
+        border-radius:10px;
+        border-bottom: 2px solid grey;
+        border-right:2px solid grey;
        }
        .header-frist-4 span{
        text-align: left;
@@ -84,12 +89,24 @@
         line-height: 40px;
         color: black;
        }
-       .mainer-frist-2{
-      	width: 70%;
-      	height:100px;
+       .mainer-frist-2 {
+        width:90%;
+        height:150px;
         margin:0px auto;
         font-size:15px;
         text-align: center;
+        
+      }
+       .mainer-frist-2 li{
+      	width: 15%;
+      	height:150px;
+        font-size:15px;
+        text-align: center;
+        float:left;
+        list-style: none;
+        padding-right: 20px;
+        margin:0px auto;
+        
       }
       .mainer-frist-2 img{
         width: 68px;
@@ -97,6 +114,7 @@
         margin: 0px auto;
       }
       .mainer-frist-3{
+        width: 100%;
         height: 60px;
         text-align: center;
         font-size:20px;
@@ -105,6 +123,7 @@
         border-bottom:1px solid rgb(222,222,222);
         line-height: 60px;
         margin-top:50px;
+        clear:left;
       }
       .mainer-second-1{
         width: 100%;
@@ -132,32 +151,51 @@
         padding-left:15%;
         padding-top:50px;
       }
-      .mainer-second-2{
-        width: 580px;
+      .mainer-third-3{
+        background-image: url(./images/today-at-apple-workshop-banner.image.large_2x.jpg);
+        background-repeat: no-repeat;
+        background-size:100%;
+        font-size: 20px;
+        line-height: 30px;
+        padding-left:12%;
+        padding-top:5%;
+        color:white;
+      }
+      .mainer-third-3 span{
+        font-size:40px;
+        line-height:50px;
+      }
+      .mainer-third-text3{
+        width: 35%;
         height: 300px;
-        margin-left:150px;
+        padding-top: 20px;
+        padding-left:3%;
+      }.mainer-second-2{
+        width: 450px;
+        height: 300px;
+        margin-left:12%;
         font-size:20px;
         line-height:40px;
         float:left;
-        margin-top:100px;
+        margin-top:5%;
       }
       .mainer-second-2 span{
         font-size:40px;
 
       }
       .mainer-second-2img{
-        padding-left:110px;
+        padding-left:8%;
         width: 240px;
         height: 150px;
       }
       .mainer-second-3{
-      width: 510px;
+      width: 490px;
       height: 480px;
       font-size: 20px;
       float:left;
       line-height: 40px;
-      margin-left:100px;
-      margin-top:100px;
+      margin-left:11%;
+      margin-top:5%;
       }
       .mainer-second-3 span{
         font-size:40px;
@@ -165,7 +203,10 @@
       .mainer-second-3img{
         padding-left:18%;
         width: 240px;
-        height: 152px;
+        height: 0px auto;
+      }
+      .mainer-second-test3{
+       clear:left;
       }
       .mainer-third-1{
         width: 48%;
@@ -175,6 +216,7 @@
         margin: 0px auto;
         overflow:hidden;
         line-height: 30px;
+        border-top:1px solid rgb(222,222,222);
       }
       .mainer-third-1 span{
         font-size: 30px;
@@ -188,36 +230,22 @@
         margin: 0px auto;
       }
       .mainer-third-3{
-        width: 100%;
-        height: 500px;
-        background-image: url(./images/today-at-apple-workshop-banner.image.large_2x.jpg);
-        background-repeat: no-repeat;
-        background-size:100%;
-        font-size: 20px;
-        line-height: 30px;
-        padding-left:280px;
-        padding-top:150px;
-      }
-      .mainer-third-3 span{
-        font-size:40px;
-        line-height:50px;
-      }
-      .mainer-third-text3{
-        width: 37%;
-        height: 300px;
-        padding-top: 20px;
-        padding-left:3%;
+        width: 89%;
+        height: 400px;
       }
       .mainer-forth-1{
-        width: 28%;
+        width: 30%;
         height:500px;
-        margin-left:200px;
+        margin-left:13%;
         font-size:18px;
         float:left;
         line-height: 35px;
+        margin-top:50px;
+        padding-top:5%;
         }
+
         .mainer-forth-img1{
-          width: 100%;
+          width: 80%;
           height: 0px auto;
         }
         .mainer-forth-1 span{
@@ -226,13 +254,15 @@
         .mainer-forth-2{
         width: 28%;
         height:500px;
-        margin-left:150px;
+        margin-left:10%;
         font-size:18px;
         float:left;
         line-height: 35px;
+        margin-top:50px;
+        padding-top:5%;
         }
         .mainer-forth-img2{
-          width:100%;
+          width:80%;
           height: 0px auto;
         }
         .mainer-forth-2 span{
@@ -242,7 +272,7 @@
           width: 80%;
           height: 180px;
           padding-left: 17%;
-          background-size: 13%;
+          background-size: 10%;
           background-position:82% 20%;
           background-image:url(./images/featured-content-security_2x.png);
           font-size:18px;
@@ -324,7 +354,7 @@
           font-size:10px;
         }
         .footer-frist-3{
-          width: 60%;
+          width: 75%;
           margin-left:11%;
         }
         .footer-frist-2 a:hover{
@@ -341,40 +371,115 @@
           color: #0000FF;
           text-decoration:underline;
         }
+        .footer-frist-3 span{padding-left:380px;}
+        .footer-frist-3 img{width: 23px;height: 0px auto;}
         a:hover{
          color: rgb(255,255,255);
          text-decoration: underline;
          color:#0000FF;
         }
-       @media screen and(max-width: 1200px)and (min-width: 800px){
-         .header span{}}
-       }
-       em{
-
-       }
+        
+       @media screen and (max-width:1405px){
+        .mainer-frist-2ul{margin:0px auto; }
+        .mainer-frist-2 li{width: 13%;padding-left: 1%}
+        .header-frist-2{font-size:10px;}
+        .header-frist-3{font-size:20px;}
+        .mainer-frist-1{font-size: 30px;}
+        .mainer-frist-3{font-size: 20px;}
+        .mainer-second-1{font-size:20px;background-size:300px;}
+        .mainer-second-h1{font-size:30px;}
+        .mainer-secong-2{font-size:20px;line-height: 28px;float:left;}
+        .mainer-second-2 span{font-size:30px;}
+        .mainer-second-2img{width: 300px;height: 0px auto;}
+        .mainer-second-3{font-size: 20px;height:400px;line-height: 28px;padding-left:20px;float:left;margin-left:20px;margin-top:100px;line-height: 40px;}
+        .mainer-second-3 span{font-size:30px;}
+        .mainer-second-3img{width: 180px;height: 0px auto;}
+        .mainer-third-1{height: 180px;clear:left;}
+        .mainer-third-2{height: 120px;clear:left;}
+        .mainer-third-3 span{font-size:30px; }
+        .mainer-third-3{font-size:20px;height: 340px;}
+        
+        .mainer-forth-img1{width: 100%;}
+        .mainer-forth-img2{width: 100%;}
+        }
+         @media screen and (max-width:1068px){
+          .header-frist-1{}
+          .mainer-frist-2{float:left;height: 500px;}
+          .li6{clear:left;}
+          .mainer-frist-2{margin-left:120px;height: 300px;}
+          .mainer-frist-2 li{width: 200px;}
+          .mainer-second-1{background-position: 300px 180px;height: 450px;background-size: 400px;}
+          .mainer-second-text1{width: 75%;text-align: center;font-size:20px;line-height: 35px;}
+          .mainer-second-2{width: 80%;height:240px;margin-left:100px;}
+          .mainer-seccond-img2{padding-left:1%;}
+          .mainer-second-3{width: 80%;height: 400px;margin-left:100px;}
+          .mainer-second-text3{width: 80%;}
+          .mainer-second-img3{float:left;padding-left:50px;}
+          .mainer-third-1{width: 75%;}
+          .mainer-third-2{width: 75%;}
+          .mainer-third-3{background-size:120%;}
+          .mainer-third-text3{font-size:18px;width:50%; }
+          .mainer-third-3 span{font-size:30px;}
+          .mainer-forth-2{width: 35%;margin-top:18px;}
+         }
+         @media screen and (max-width:755px){
+          .header{height: 520px;}
+          .header-frist-1{font-size:15px;}
+          .mainer-frist-2 li{width: 150px;height: 150px;}
+          .header-frist-3{width: 80%;margin-top:200px;font-size:18px;color:black;text-align: center;line-height: 40px;padding-top:60px;height: 95px;}
+          .header-frist-3 span{font-size:25px;}
+          .header-frist-4{width: 350px;}
+          .header-frist-4 input{width:350px;}
+          .mainer-frist-2{height: 580px;margin-left:50px;}
+          .li6{float:left;}
+          .li7{clear;left;}
+          .mainer-frist-1{height: 60px;margin-left:80px;}
+          .mainer-second-1{background-position:100px 200px;}
+          .mainer-second-2{width: 90%;margin:5%;height: 330px;}
+          .mainer-second-img2{padding-left:100px;}
+          .mainer-second-3{width: 90%;margin:5%;height: 380px;}
+          .mainer-second-text3{width: 100%;}
+          .mainer-third-text3{margin-top:200px;color: black;width: 90%;margin-left:0px;padding-left:0px;line-height: 30px;}
+          .mainer-third-3{height: 400px;}
+          .mainer-forth-1{clear:left;width: 90%;height: 350px;margin-left:30px;font-size:18px;}
+          .mainer-forth-1 span{font-size:25px;}
+          .mainer-forth-img1{width: 60%;height: 0px auto;padding-left:60px;}
+          .mainer-forth-2{clear:left;width: 90%;height: 380px;margin-left:30px;font-size:18px;}
+           .mainer-forth-2 span{font-size:25px;}
+          .mainer-forth-img2{width: 60%;height: 0px auto;padding-left:60px;}
+          .mainer-forth-3{margin-left:0px;background-position: 900px 0px;width: 95%;padding-left:10px;height: 150px;font-size:15px;}
+          .mainer-forth-4 span{font-size:25px;}
+          .mainer-forth-4{font-size:15px;}
+          .mainer-forth-5 span{font-size:25px;}
+          .mainer-forth-5{font-size:15px;}
+          .mainer-forth-6{font-size:15px;}
+          .mainer-forth-6 span{font-size:23px;}
+          .footer-frist-1{line-height: 25px;}
+          .footer-frist-2{height:80px;}
+          .footer-frist-3 span{padding-left:110px;}
+         }
 	</style>
 </head>
 <body>
-   <div class="header">
+      <div class="header">
       <div class="header-frist-1"><span>Mac</span><span>iPad</span><span>iPhone</span><span>Watch</span><span>Music</span><span>技术支持</span></div>
       <div class="header-frist-2"><span>支持</span>社区 联系支持</div>
       <div class="header-frist-3"><span><strong>欢迎使用  Apple  支持</strong></span></br>我们随时提供帮助</div>
       <div class="header-frist-4"><input type="bottom" placeholder="搜索支持" /></div>
    </div>
    <div class="mainer">
-         <div class="mainer-frist-1"<strong>获取帮助并了解</strong></strong></div>
-         <table class="mainer-frist-2"><tr><td><img src="./images/homepage_productnav_apple_watch_2x.png"></br> Apple Watch</td><td><img src="./images/homepage_productnav_iphone_2x.png"></br> iPhone</td><td><img src="./images/homepage_productnav_ipad_2x.png"></br>iPad</td><td><img src="./images/homepage_productnav_imac_2x.png"></br>Mac</td><td><img src="./images/homepage_productnav_apple-id_2x.png"></br>Apple ID</td><td><img src="./images/homepage_productnav_itunes_2x.png"></br>iTunes</td></tr>
-           </table>
+         <div class="mainer-frist-1"><strong>获取帮助并了解</strong></div>
+         <div class="mainer-frist-2"><ul class="mainer-frist-2ul"> <li><img src="./images/homepage_productnav_apple_watch_2x.png"></br> Apple Watch</li><li><img src="./images/homepage_productnav_iphone_2x.png"></br> iPhone</li><li class="li7"><img src="./images/homepage_productnav_ipad_2x.png"></br>iPad</li><li class="li6"><img src="./images/homepage_productnav_imac_2x.png"></br>Mac</li><li class="li7"><img src="./images/homepage_productnav_apple-id_2x.png"></br>Apple ID</li><li><img src="./images/homepage_productnav_itunes_2x.png"></br>iTunes</li></ul></div>
          <div class="mainer-frist-3"><a>展示产品列表</a></div>
          <div class="mainer-second-1"><div class="mainer-second-text1"mainer-second-1><h class="mainer-second-h1"><strong>在设备上获取最新软件</strong></h></br>有了 iOS 11 和 macOS High Sierra，您的设备将比以往更可靠、更强大、响应更灵敏。了解您可以使用这些强大的操作系统实现什么操作。<a><span>更新至ios11</a><a>升级至macOS High Sierra</a></span></div></div>
          <div class="mainer-second-2"><img class="mainer-second-2img" src="./images/apple-care-products_2x.png"></br><span>了解您的保修状态</span></br><a>AppleCare产品</a>可以为您提供额外保险与技术支持。如果您已经购买了AppleCare产品，可以<a>在线进行管理。</a></br>
          <a>查看您产品的保修状态></a></div>
-         <div class="mainer-second-3"><img class="mainer-second-3img" src="./images/repair_2x.png"></br><span>让我们修好您的设备</span></br>如果您的 Apple 设备需要维修，您可以前往 Apple Store 商店或授权服务提供商处，也可以将设备邮寄给我们。无论您选择哪种方式，我们都会确保您的设备能够恢复正常工作。</br><a>选择维修选项</a></div>
+         <div class="mainer-second-3"><img class="mainer-second-3img" src="./images/repair_2x.png"></br><div class="mainer-second-text3"><span>让我们修好您的设备</span></br>如果您的 Apple 设备需要维修，您可以前往 Apple Store 商店或授权服务提供商处，也可以将设备邮寄给我们。无论您选择哪种方式，我们都会确保您的设备能够恢复正常工作。</br><a>选择维修选项</a></div></div>
          <div class="mainer-third-1">留心假冒部件</br>某些假冒和第三方的电源适配器及电池可能设计不当，有可能会导致安全问题。为了确保您在电池更换时能够获得正品</ Apple 电池，我们建议您前往 <a>Apple Store</a> 商店或 <a>Apple 授权服务提供商处</a>。如果您需要更换一个新的适配器来为您的 Apple 设备充电，我们建议您选择 Apple 的电源适配器。</div>
          <div class="mainer-third-2">此外，非正品显示屏更换件可能会使画质受损，并且可能无法正常工作。Apple 认证屏幕维修由可信赖的专家进行，他们使用 Apple 原厂部件。</div>
-         <div class="mainer-third-3"><div class="mainer-third-text3"><span>参加我们的 Today </br>at Apple 课程。</br></span>了解如何使用 iPhone 拍摄照片。学习在 iPad 上进行素描。在Apple，您每天都能尽情投入自己的兴趣和爱好。</br><a>报名参加附近的课程</a></div></div>
-         <div class="mainer-forth-1"><img class="mainer-forth-img1" src="./images/contentlink-communities_2x.png"></br><span>有问题？问问大家。</span></br>Apple 支持社区的成员可以帮助回答您的问题。如果其他人已经问过同样的问题，您可以搜索最佳答案。</br><a>立即提问</a></div>
-         <div class="mainer-forth-2"><img class="mainer-forth-img2" src="./images/artcol-contentlink-expert_2x.png"></br><span>想要与支持人员沟通？</span></br>通过电话、聊天服务或电子邮件获得帮助、安排维修或进行 Genius Bar 天才吧预约。</br><a>联系 Apple 支持</a></div>
+         <div class="mainer-third-3"><div class="mainer-third-text3"><span>参加我们的 Today </br>at Apple 课程。</br></span>了解如何使用 iPhone 拍摄照片。学习在 iPad 上进行素描。在Apple，您每天都能尽情投入自己的兴趣和爱好。<a>报名参加附近的课程</a></div></div>
+         <div class="mainer-forth-1"><img class="mainer-forth-img1" src="./images/contentlink-communities_2x.png"></br><div class="mainer-forth-text1"><span>有问题？问问大家。</span></br>Apple 支持社区的成员可以帮助回答您的问题。如果其他人已经问过同样的问题，您可以搜索最佳答案。</br><a>立即提问</a></div></div>
+         <div class="mainer-forth-2"><img class="mainer-forth-img2" src="./images/artcol-contentlink-expert_2x.png"></br><div class="mainer-forth-text2"><span>想要与支持人员沟通？</span></br>通过电话、聊天服务或电子邮件获得帮助、安排维修或进行 Genius Bar 天才吧预约。</br><a>联系 Apple 支持</a></div></div>
          <div class="mainer-forth-3"><span>保护 Apple ID 帐户的技巧</span></br>这里有一些实用技巧，可帮助您确保 Apple ID 和帐户信息的安全。</br><a>获取有关保护 Apple ID 帐户的支持</a></div>
          <div class="mainer-forth-4"><span>了解 Apple 在中国的服务和保修政策</span></br><a>了解保修和服务选项</a></div>
          <div class="mainer-forth-5"><span>有关 iPhone 及意外关机的信息</span></br><a>了解详情</a></div>
@@ -401,7 +506,7 @@
          <div class="footer-frist-2"><a>更多选购方式：前往 Apple Store 零售店、拨打 400-666-8800</a> 或 <a>查找经销商。</a> </div>
          <ul class="footer-frist-3">
             <li>Copyright © 2017 Apple Inc. 保留所有权利。</li><li> 隐私政策 </li><li>使用条款</li><li>销售和退款</li><li>站点地图 
-            </li><li>联系 Apple</li>
+            </li><li>联系 Apple</li><li><span><img src="./images/china.png"></li> <li> 中国</span></li>
          </ul>
     </div>
 </body>

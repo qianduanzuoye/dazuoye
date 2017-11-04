@@ -1,0 +1,201 @@
+﻿	body{
+		height: 4000px;
+	}
+	.border-radius{
+		margin:50px;padding:10px 40px; background:#dddddd;width:350px;border-radius:25px;-moz-border-radius:25px; /* 老的 Firefox */
+	}
+
+	.box-shadow{
+		margin:50px;width:300px;height:200px;background-color:#ff9900;-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */box-shadow: 10px 10px 5px  #888888;
+	
+	box-shadow: 10px 10px 5px 5px  #888888 ;
+}
+
+	.background-origin{
+		margin: 50px;
+	    padding: 50px;
+	    width: 300px;
+	    height: 200px;
+	    border: 50px solid  transparent;
+	    background-color: #ff9900;
+	    background-origin: border-box;
+	    background-image: url(backboard.png);
+	    background-repeat: no-repeat;
+	    background-size: 100px 100px;
+
+	}
+
+	.text-overflow{
+		margin:50px;
+		white-space:nowrap; 
+		width:200px;
+		height: 20px; 
+		overflow:hidden; 
+		border:1px solid #000000;
+		text-overflow:ellipsis;
+	}
+	.text-shadow{
+		font-size: 30px;
+		margin:50px;
+		text-shadow: 5px 5px 5px #FF0000;
+	}
+	.transform-2D{
+		margin:50px;
+		position: relative;
+
+	}
+	.translate{
+		left: 0;
+		top:50px;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		background-color:red;
+	}
+	.translate-finished{
+		background-color: green;
+		transform: translate(50px,100px);
+		-ms-transform: translate(50px,100px);		/* IE 9 */
+		-webkit-transform: translate(50px,100px);	/* Safari and Chrome */
+		-o-transform: translate(50px,100px);		/* Opera */
+		-moz-transform: translate(50px,100px);		/* Firefox */
+	}
+	.rotate{
+		/*transform-origin:100px 100px;*/
+		left: 0;
+		top:300px;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		background-color:red;
+
+	}
+	.rotate-finished{
+		background-color: green;
+		transform: rotate(30deg);
+		-ms-transform: rotate(30deg);		/* IE 9 */
+		-webkit-transform: rotate(30deg);	/* Safari and Chrome */
+		-o-transform: rotate(30deg);		/* Opera */
+		-moz-transform: rotate(30deg);
+	}
+	.scale{
+		left: 0;
+		top:500px;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		background-color:red
+
+	}
+	.scale-finished{
+		background-color: green;
+		left:100px;
+		transform: scale(1,2);
+		-ms-transform: scale(1,2);	/* IE 9 */
+		-webkit-transform: scale(1,2);	/* Safari 和 Chrome */
+		-o-transform: scale(1,2);	/* Opera */
+		-moz-transform: scale(1,2);	/* Firefox */
+	}
+	.skew{
+		left: 0;
+		top:700px;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		background-color:red
+
+	}
+	.skew-finished{
+		background-color: green;
+		left:100px;
+		transform: skew(30deg,0deg);
+		-ms-transform: skew(30deg,0deg);	/* IE 9 */
+		-webkit-transform: skew(30deg,0deg);	/* Safari and Chrome */
+		-o-transform: skew(30deg,0deg);	/* Opera */
+		-moz-transform: skew(30deg,0deg);
+	}
+	.transform-3D{
+		position: relative;
+		top: 800PX;
+		margin: 50PX;
+	}
+
+	.transition{
+		position: relative;
+		top: 900PX;
+		margin: 50PX;
+	}
+.myTransition{
+		left: 0;
+		top:100px;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		background: red;
+		-ms-transition:width 0.8s, height 0.8s, -ms-transform 0.8s;   /* IE 9浏览器 */
+        -moz-transition:width 0.8s ,height 0.8s, -moz-transform 0.8s; /*老版本火狐浏览器兼容*/
+        -o-transition:width 0.8s, height 0.8s, -o-transform 0.8s;/* Opera与Chrom浏览器兼容*/
+        -webkit-transition:width 0.8s, height 0.8s, -webkit-transform 0.8s;/*Safari浏览器兼容*/
+        transition:width 0.8s ,height 0.8s ,transform 0.8s;
+}
+.myTransition:hover{
+		width: 200px;
+		height: 200px;
+		transform: rotate(360deg);
+		-ms-transform: rotate(360deg);	/* IE 9 */
+		-webkit-transform: rotate(360deg);	/* Safari 和 Chrome */
+		-o-transform: rotate(360deg);	/* Opera */
+		-moz-transform: rotate(360deg);	/* Firefox */
+
+}
+.animate{
+		position: relative;
+		top: 1000PX;
+		margin: 50PX;
+
+}
+.myAnimate{
+		left: 0;
+		top:100px;
+		position: absolute;
+		height: 100px;
+		width: 100px;
+	animation:mymove 5s ease 2s infinite alternate;
+	-webkit-animation:mymove 5s ease 2s infinite alternate; /*Safari and Chrome*/
+		
+}
+@keyframes mymove
+{
+0%   {background: red; left:0px;top:100;}
+25%  {background: yellow;left: 200px;top:100px; width: 400px;}
+50%  {background: blue;left: 200px;top:300px;width: 300px;}
+75%  {background: blue;left: 0px;top:300px;width: 200px;}
+100% {background: green;left: 0px;top:100;}
+}
+
+@-moz-keyframes mymove
+{
+0%   {background: red; left:0px;top:100;}
+25%  {background: yellow;left: 200px;top:100px; width: 400px;}
+50%  {background: blue;left: 200px;top:300px;width: 300px;}
+75%  {background: blue;left: 0px;top:300px;width: 200px;}
+100% {background: green;left: 0px;top:100;}
+}
+
+@-webkit-keyframes mymove 
+{
+0%   {background: red; left:0px;top:100;}
+25%  {background: yellow;left: 200px;top:100px; width: 400px;}
+50%  {background: blue;left: 200px;top:300px;width: 300px;}
+75%  {background: blue;left: 0px;top:300px;width: 200px;}
+100% {background: green;left: 0px;top:100;}
+}
+
+@-o-keyframes mymove
+{
+0%   {background: red; left:0px;top:100;}
+25%  {background: yellow;left: 200px;top:100px;}
+50%  {background: blue;left: 200px;top:300px;}
+75%  {background: blue;left: 0px;top:300px;}
+100% {background: green;left: 0px;top:100;}
+}
