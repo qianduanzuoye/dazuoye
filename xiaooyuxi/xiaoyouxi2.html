@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xiaoyouxi</title>
+</head>
+<body>
+<canvas id="canvas" width="1200" height="800" style="
+    border: 1px solid black;
+">当前浏览器不支持canvas</canvas>
+<button id="button1" onclick="Xuanzhuan1(this)" style="width:50px;height:80px;margin-left:50px;background: url(jian3.jpg);background-size:80px auto;border:none;outline:none;"></button>
+<button id="button2" onclick="xiaoqiu(this)" style="width:60px;height:80px;margin-left:50px;border:none; outline:none;background: url(quan1.jpg);background-size:80px auto;border:none;outline:none;background-position: -10px"></button>
+<button id="button3" onclick="Xuanzhuan2(this)" style="width:50px;height:80px;margin-left:50px;background: url(jian3.jpg);background-size:80px auto;background-position:-31px 0px;border:none;outline:none;"></button>
+<input class="srceen" readonly='readonly'
+value = "0" style="width:60px;height:40px;background: url(http://img1.3lian.com/2015/a2/229/d/288.jpg);background-size:60px auto;font-size:30px;">
+<script type="text/javascript">
+var canvas= document.getElementById("canvas");//设置一个画布
+    canvas.width=1200;
+    canvas.height=800;
+    canvas.border=2;
+    if(canvas.getContext("2d"))
+	{
+		var context=canvas.getContext('2d');
+	}
+	else{
+		alert("当前浏览器不支持canvas");
+	}
+    var context=canvas.getContext('2d');
+	    context.beginPath();
+		context.moveTo(500,350);
+	    context.lineTo(500,450);
+	    
+		context.lineWidth=30;
+		context.strokeStyle="red";
+	    context.LineCap="round";
+	    context.closePath();
+	    context.stroke();
+
+	   context.beginPath();
+	   context.arc(500,450,20,0,2*Math.PI,false);
+	   context.strokeStyle="yellow";
+	   context.closePath();
+	   context.fillStyle="yellow";
+	   context.fill();
+       context.stroke();
+	   var i=-9; 
+	   var a;
+	   var b;
+	   var x;
+	   var y;
+function huizhi(){
+
+    context.beginPath();
+   
+    context.moveTo(x=500-100*Math.cos(10*i/180*Math.PI),y=450+100*Math.sin(10*i/180*Math.PI));
+     context.lineTo(500,450);
+	context.lineWidth=30;
+    context.strokeStyle="red";
+    context.LineCap="round";
+    context.closePath();
+    context.stroke();
+
+    context.beginPath();
+	context.arc(500,450,20,0,2*Math.PI,false);
+	context.strokeStyle="yellow";
+	context.closePath();
+    context.fillStyle="yellow";
+	context.fill();
+    context.stroke();
+   }
+ function Xuanzhuan1(){
+ 	 i++;  
+ 	 context.clearRect(0,0,canvas.width,canvas.height);
+  huizhi();
+ }
+
+ function Xuanzhuan2(){
+ 	i--;
+ 	context.clearRect(0,0,canvas.width,canvas.height);
+  huizhi();
+ }
+
+     a=500-100*Math.cos(10*i/180*Math.PI);
+     b=450+100*Math.sin(10*i/180*Math.PI);
+      var j; 
+      var balls=[]; 
+      var ball={x:a,y:b,vx:20,vy:5,g:0.1}
+      var a;
+      var b;
+   
+  function xiaoqiu(){ 
+     balls.push(ball);
+      setInterval(function xiaoqiu1()
+        {
+       for (j=0;j<balls.length;j++){
+        context.clearRect(0,0,canvas.width,canvas.height);
+         huizhi();
+	    if(balls[j].y+balls[j].vy>canvas.height-10)
+	    {
+	       balls[j].vy=0;
+	    }
+	    if(balls[j].x+balls[j].vx>canvas.width-5 ){
+	        	balls[j].vx=-balls[j].vx;
+	    }
+            balls[j].x += balls[j].vx;
+	        balls[j].y +=balls[j].vy;
+	        balls[j].vy += balls[j].g;
+          context.beginPath();
+	       context.arc( balls[j].x,balls[j].y,20, 0 ,2*Math.PI,true );
+           context.closePath();
+          context.fillStyle="pink";
+	      context.fill();
+     }
+ },10);
+	
+}
+	  var heng=parseInt(500*Math.random());
+	  var shu=parseInt(500*Math.random());
+	  var fangkuai={x:heng,y:shu,vx:40,vy:0}
+ for(;;){
+      setInterval(function()
+     {
+     context.clearRect(0,0,canvas.width,canvas.height);
+     huizhi();
+     context.beginPath();
+	 context.arc(a,b,20, 0 ,2*Math.PI,true );
+     context.closePath();
+     context.fillStyle="pink";
+	 context.fill();
+     
+     fangkuai.x += fangkuai.vx;
+     fangkuai.y = fangkuai.y;
+     context.beginPath();
+     context.moveTo(heng+fangkuai.x,shu+fangkuai.y);
+     context.lineTo(heng+fangkuai.x+50,shu+fangkuai.y);
+     context.lineWidth=50;
+	 context.lineStyle="blue";
+	 context.stroke();
+	 context.closePath();
+     },100)
+  }
+    
+    // if(ball[j].x+a == fangkuai.x && ball[j].y+b == fangkuai.y){
+    // 	context.clearRect(fangkuai.x,fangkuai.y,fangkuai.x+50,fangkuai.y+50);
+    // 	inputTemp.value ++;
+    // }
+ 
+</script>	
+</body>
+</html>

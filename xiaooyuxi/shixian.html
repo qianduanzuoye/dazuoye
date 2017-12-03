@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<canvas id= "canvas">
+</canvas>
+<script>
+var canvas= document.getElementById("canvas");//设置一个画布
+    canvas.width=1200;
+    canvas.height=800;
+    canvas.border=2;
+    if(canvas.getContext("2d"))
+	{
+		var context=canvas.getContext('2d');
+	}
+	else{
+		alert("当前浏览器不支持canvas");
+	}
+	var ball={x:100,y:200,vx:2,vy:5,g:0.01}
+	function xiaoqiu(){
+	context.clearRect(0,0,canvas.width,canvas.height);
+		   ball.x += ball.vx;
+	        ball.y +=ball.vy;
+	        ball.vy += ball.g;
+	        context.fillStyle="pink";
+	        context.beginPath();
+	        context.arc( ball.x,ball.y,10, 0 ,2*Math.PI , true );
+	        context.closePath();
+	        context.fill();
+	        context.beginPath(); 
+	    }
+	setInterval (xiaoqiu ,10)
+</script>	
+</body>
+</html>

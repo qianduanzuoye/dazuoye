@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+    .gaoxiao{
+        width: 700px;
+        height: 500px;
+        background-image: url(shaonv.jpg);
+        margin-left:200px;
+        margin-top:100px;
+        font-size:30px;
+        color: black;
+    }
+    a:hover {
+     color: red;
+     font-size:45px;
+     margin-top:120px;
+    }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class = "gaoxiao" >
+        <a href="home.aspx">个人主页</a>
+        <a href="self.aspx" style="color: black;">个人档</a>
+        <a href="diary.aspx" style="color: black;">日志</a>
+        <a href="message_box.aspx" style="color: black;">留言板</a>
+        <a href="album.aspx" style="color: black;">相册</a>
+        <a href="friends" style="color: black;">好友</a><br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

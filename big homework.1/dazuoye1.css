@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>dazuoye</title>
-	<style type="text/css">
-       .header{
+ .header{
         width: 100%;
        	height: 550px;
        	background-image: url(./images/homepage-hero.image.large_2x.jpg);
@@ -173,7 +167,7 @@
       }.mainer-second-2{
         width: 450px;
         height: 300px;
-        margin-left:12%;
+        margin-left:18%;
         font-size:20px;
         line-height:40px;
         float:left;
@@ -214,6 +208,7 @@
         text-align: center;
         font-size:18px;
         margin: 0px auto;
+        padding-top:60px;
         overflow:hidden;
         line-height: 30px;
         border-top:1px solid rgb(222,222,222);
@@ -230,6 +225,7 @@
         margin: 0px auto;
       }
       .mainer-third-3{
+        margin-top:50px;
         width: 89%;
         height: 400px;
       }
@@ -239,7 +235,7 @@
         margin-left:13%;
         font-size:18px;
         float:left;
-        line-height: 35px;
+        line-height: 38px;
         margin-top:50px;
         padding-top:5%;
         }
@@ -257,8 +253,8 @@
         margin-left:10%;
         font-size:18px;
         float:left;
-        line-height: 35px;
-        margin-top:50px;
+        line-height: 38px;
+        margin-top:60px;
         padding-top:5%;
         }
         .mainer-forth-img2{
@@ -270,38 +266,39 @@
         }
         .mainer-forth-3{
           width: 80%;
-          height: 180px;
+          height: 220px;
           padding-left: 17%;
           background-size: 10%;
-          background-position:82% 20%;
+          background-position:1300px;
           background-image:url(./images/featured-content-security_2x.png);
-          font-size:18px;
+          font-size:23px;
           clear: left;
           background-repeat:no-repeat;
-          line-height: 30px;
+          line-height: 35px;
           border-top:1px solid grey;
           border-bottom:1px solid rgb(222,222,222);
-          padding-top:40px;
+          padding-top:100px;
+
         }
         .mainer-forth-3 span{
-          font-size: 30px;
+          font-size: 35px;
         }
         .mainer-forth-4{
           width: 100%;
-          height: 100px;
+          height: 120px;
           font-size:18px;
           text-align: center;
-          line-height: 35px;
-          padding-top:30px;
+          line-height: 40px;
+          padding-top:40px;
          border-top:1px solid grey;
           border-bottom:1px solid rgb(222,222,222);
         }
         .mainer-forth-4 span{
-          font-size:25px;
+          font-size:30px;
         }
         .mainer-forth-5{
           width: 100%;
-          height: 110px;
+          height: 140px;
           font-size:18px;
           text-align: center;
           padding-top:100px;
@@ -315,7 +312,7 @@
         }
         .mainer-forth-6{
           width: 100%;
-          height: 300px;
+          height: 350px;
           font-size:18px;
           text-align: center;
           padding-top:100px;
@@ -324,7 +321,7 @@
           border-top:1px solid rgb(222,222,222);
         }
         .mainer-forth-6 span{
-          font-size:20px;
+          font-size:35px;
         }
         .footer{
           height: 400px;
@@ -341,9 +338,10 @@
         }
         .footer-frist-1 span{
           font-size: 15px;
+          color:grey;
         }
-        .footer-frist-td1{
-          text-align: center;
+        .footer-frist-td1 span{
+          padding-left:50px;
           font-size:15px;
         }
         .footer-frist-2{
@@ -358,7 +356,7 @@
           margin-left:11%;
         }
         .footer-frist-2 a:hover{
-          color:#00000F;
+          color:#0070c9;
           text-decoration: underline;
         }
         .footer-frist-3 li{
@@ -368,17 +366,25 @@
           margin-left:1%;
         }
         .footer-frist-3 li:hover{
-          color: #0000FF;
+          color: #555;
           text-decoration:underline;
         }
-        .footer-frist-3 span{padding-left:380px;}
+        .footer-frist-3 span{padding-left:500px;}
         .footer-frist-3 img{width: 23px;height: 0px auto;}
         a:hover{
-         color: rgb(255,255,255);
          text-decoration: underline;
-         color:#0000FF;
+         color:#0070c9;
         }
-        
+        a{
+          color:#0070c9;
+        }
+        .footer-frist-1{
+          color:#555; 
+        }
+        .footer-frist-1 a{
+          color:#555;
+        }
+
        @media screen and (max-width:1405px){
         .mainer-frist-2ul{margin:0px auto; }
         .mainer-frist-2 li{width: 13%;padding-left: 1%}
@@ -405,7 +411,6 @@
          @media screen and (max-width:1068px){
           .header-frist-1{}
           .mainer-frist-2{float:left;height: 500px;}
-          .li6{clear:left;}
           .mainer-frist-2{margin-left:120px;height: 300px;}
           .mainer-frist-2 li{width: 200px;}
           .mainer-second-1{background-position: 300px 180px;height: 450px;background-size: 400px;}
@@ -456,58 +461,7 @@
           .mainer-forth-6 span{font-size:23px;}
           .footer-frist-1{line-height: 25px;}
           .footer-frist-2{height:80px;}
-          .footer-frist-3 span{padding-left:110px;}
+          .footer-frist-3 span{padding-left:100px;}
+          .footer-frist-3{width: 100%;margin-left:20px;}
          }
-	</style>
-</head>
-<body>
-      <div class="header">
-      <div class="header-frist-1"><span>Mac</span><span>iPad</span><span>iPhone</span><span>Watch</span><span>Music</span><span>技术支持</span></div>
-      <div class="header-frist-2"><span>支持</span>社区 联系支持</div>
-      <div class="header-frist-3"><span><strong>欢迎使用  Apple  支持</strong></span></br>我们随时提供帮助</div>
-      <div class="header-frist-4"><input type="bottom" placeholder="搜索支持" /></div>
-   </div>
-   <div class="mainer">
-         <div class="mainer-frist-1"><strong>获取帮助并了解</strong></div>
-         <div class="mainer-frist-2"><ul class="mainer-frist-2ul"> <li><img src="./images/homepage_productnav_apple_watch_2x.png"></br> Apple Watch</li><li><img src="./images/homepage_productnav_iphone_2x.png"></br> iPhone</li><li class="li7"><img src="./images/homepage_productnav_ipad_2x.png"></br>iPad</li><li class="li6"><img src="./images/homepage_productnav_imac_2x.png"></br>Mac</li><li class="li7"><img src="./images/homepage_productnav_apple-id_2x.png"></br>Apple ID</li><li><img src="./images/homepage_productnav_itunes_2x.png"></br>iTunes</li></ul></div>
-         <div class="mainer-frist-3"><a>展示产品列表</a></div>
-         <div class="mainer-second-1"><div class="mainer-second-text1"mainer-second-1><h class="mainer-second-h1"><strong>在设备上获取最新软件</strong></h></br>有了 iOS 11 和 macOS High Sierra，您的设备将比以往更可靠、更强大、响应更灵敏。了解您可以使用这些强大的操作系统实现什么操作。<a><span>更新至ios11</a><a>升级至macOS High Sierra</a></span></div></div>
-         <div class="mainer-second-2"><img class="mainer-second-2img" src="./images/apple-care-products_2x.png"></br><span>了解您的保修状态</span></br><a>AppleCare产品</a>可以为您提供额外保险与技术支持。如果您已经购买了AppleCare产品，可以<a>在线进行管理。</a></br>
-         <a>查看您产品的保修状态></a></div>
-         <div class="mainer-second-3"><img class="mainer-second-3img" src="./images/repair_2x.png"></br><div class="mainer-second-text3"><span>让我们修好您的设备</span></br>如果您的 Apple 设备需要维修，您可以前往 Apple Store 商店或授权服务提供商处，也可以将设备邮寄给我们。无论您选择哪种方式，我们都会确保您的设备能够恢复正常工作。</br><a>选择维修选项</a></div></div>
-         <div class="mainer-third-1">留心假冒部件</br>某些假冒和第三方的电源适配器及电池可能设计不当，有可能会导致安全问题。为了确保您在电池更换时能够获得正品</ Apple 电池，我们建议您前往 <a>Apple Store</a> 商店或 <a>Apple 授权服务提供商处</a>。如果您需要更换一个新的适配器来为您的 Apple 设备充电，我们建议您选择 Apple 的电源适配器。</div>
-         <div class="mainer-third-2">此外，非正品显示屏更换件可能会使画质受损，并且可能无法正常工作。Apple 认证屏幕维修由可信赖的专家进行，他们使用 Apple 原厂部件。</div>
-         <div class="mainer-third-3"><div class="mainer-third-text3"><span>参加我们的 Today </br>at Apple 课程。</br></span>了解如何使用 iPhone 拍摄照片。学习在 iPad 上进行素描。在Apple，您每天都能尽情投入自己的兴趣和爱好。<a>报名参加附近的课程</a></div></div>
-         <div class="mainer-forth-1"><img class="mainer-forth-img1" src="./images/contentlink-communities_2x.png"></br><div class="mainer-forth-text1"><span>有问题？问问大家。</span></br>Apple 支持社区的成员可以帮助回答您的问题。如果其他人已经问过同样的问题，您可以搜索最佳答案。</br><a>立即提问</a></div></div>
-         <div class="mainer-forth-2"><img class="mainer-forth-img2" src="./images/artcol-contentlink-expert_2x.png"></br><div class="mainer-forth-text2"><span>想要与支持人员沟通？</span></br>通过电话、聊天服务或电子邮件获得帮助、安排维修或进行 Genius Bar 天才吧预约。</br><a>联系 Apple 支持</a></div></div>
-         <div class="mainer-forth-3"><span>保护 Apple ID 帐户的技巧</span></br>这里有一些实用技巧，可帮助您确保 Apple ID 和帐户信息的安全。</br><a>获取有关保护 Apple ID 帐户的支持</a></div>
-         <div class="mainer-forth-4"><span>了解 Apple 在中国的服务和保修政策</span></br><a>了解保修和服务选项</a></div>
-         <div class="mainer-forth-5"><span>有关 iPhone 及意外关机的信息</span></br><a>了解详情</a></div>
-         <div class="mainer-forth-6"><span>更换和维修扩展计划</span></br><a>iPhone 6s 意外关机问题计划</a></br><a>适用于 iPhone 6 Plus 的Multi-Touch 维修计划</a></br><a>Apple 交流电源插头转换器更换计划</a></br><a>Apple USB-C 充电线缆更换计划</a></br><a>Beats Pill XL 扬声器召回计划</a></br><a>所有计划</a></div>
-    <div class="footer">
-         <table class="footer-frist-1">
-             <tr><td class="footer-frist-td1">支持</td>
-             </tr>
-             <tr><td><span><a>服务和支持</a></span></td><td><span><a>计划</a></span></td><td><span><a>资源</a></span></td><td><span><a>通讯录</a></span></td>
-             </tr>
-             <tr><td><a>免费提供的支持</a></td><td><a> Apple 培训</a></td><td><a>下载和更新</a></td><td><a>支持电话号码</a></td>
-             </tr>
-             <tr><td><a>硬件保修</a></td><td><a>教育资源</a></td><td><a>手册</a></td><td><a>iTunes Store 支持</a></td>
-             </tr>
-             <tr><td><a>软件许可协议</a></td><td></td><td><a>技术规格</a></td><td><a>联系移动运营商</a></td>
-             </tr>
-             <tr><td><a>服务问题解答 (FAQ）</a></td><td></td><td><a>系统状态</a></td><td></td>
-             </tr>
-             <tr><td></td><td></td><td><a>辅助功能</a></td><td></td>
-             </tr>
-             <tr><td></td><td></td><td><a>支持站点地图</a></td><td></td>
-             </tr>
-         </table>
-         <div class="footer-frist-2"><a>更多选购方式：前往 Apple Store 零售店、拨打 400-666-8800</a> 或 <a>查找经销商。</a> </div>
-         <ul class="footer-frist-3">
-            <li>Copyright © 2017 Apple Inc. 保留所有权利。</li><li> 隐私政策 </li><li>使用条款</li><li>销售和退款</li><li>站点地图 
-            </li><li>联系 Apple</li><li><span><img src="./images/china.png"></li> <li> 中国</span></li>
-         </ul>
-    </div>
-</body>
-</html>
+	

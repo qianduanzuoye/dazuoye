@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>xiaoyouxi</title>
+</head>
+<body>
+<canvas id="canvas" width="1200" height="800" style="
+    border: 1px solid black;
+">当前浏览器不支持canvas</canvas>
+<button id="button1" onclick="Xuanzhuan1(this)" style="width:50px;height:80px;margin-left:50px;background: url(jian3.jpg);background-size:80px auto;border:none;outline:none;"></button>
+<button id="button2"  style="width:60px;height:80px;margin-left:50px;border:none; outline:none;background: url(quan1.jpg);background-size:80px auto;border:none;outline:none;background-position: -10px"></button>
+<button id="button3" onclick="Xuanzhuan2(this)" style="width:50px;height:80px;margin-left:50px;background: url(jian3.jpg);background-size:80px auto;background-position:-31px 0px;border:none;outline:none;"></button>
+<script type="text/javascript">
+var canvas= document.getElementById("canvas");//设置一个画布
+    canvas.width=1200;
+    canvas.height=800;
+    canvas.border=2;
+    if(canvas.getContext("2d"))
+	{
+		var context=canvas.getContext('2d');
+	}
+	else{
+		alert("当前浏览器不支持canvas");
+	}
+    var context=canvas.getContext('2d');
+	    context.beginPath();
+		context.moveTo(500,350);
+	    context.lineTo(500,480);
+	    
+		context.lineWidth=30;
+		context.strokeStyle="red";
+	    context.LineCap="round";
+	    context.closePath();
+	    context.stroke();
+
+	    context.beginPath();
+	    context.moveTo(500,420);
+	    context.lineTo(500,480);
+		    context.lineWidth=70;
+		    context.strokeStyle="yellow";
+            context.LineCap="round";
+            context.closePath();
+            context.stroke();
+ function Xuanzhuan2(){
+ 	context.clearRect(0,0,canvas.width,canvas.height);
+ 	     var x=15;
+		 var y=-150;
+		// var z=480;
+	     var a=60;
+	     var b=-35;
+	     //var c=440;
+    context.translate(535,480); 
+    context.moveTo(x=x-60*Math.sin(10),y=y-60*Math.cos(10));
+    //context.lineTo(500,)
+    //context.lineTo(x=x-60*Math.sin(10),z=z-60*Math.cos(10));
+    context.lineWidth=70;
+    context.strokeStyle="yellow";
+    context.LineCap="round";
+    context.stroke();
+
+    context.beginPath();
+	context.moveTo(a=a-60*Math.sin(10),b=b+60*Math.cos(10));
+    //context.lineTo(a=a-150*Math.sin(10),c=c+150*Math.cos(10));
+	context.lineWidth=30;
+    context.strokeStyle="red";
+    context.LineCap="round";
+    context.stroke();
+ }
+
+ function Xuanzhuan1(){
+    context.clearRect(0,0,canvas.width,canvas.height);
+     
+   
+ }
+
+</script>	
+</body>
+</html>
